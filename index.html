@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>checkbox demo and description</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- el-checkbox -->
+	<link rel="stylesheet" href="./dist/checkbox.css">
+</head>
+<style>
+	.margin-r{
+		margin-right:10px;
+		vertical-align: top;
+		line-height:1.6;
+	}
+	.container{
+		width:900px;
+		padding-bottom:100px;
+	}
+	.btn-primary{
+		border-color: #20a0ff !important;
+		background-color: #20a0ff !important;
+		margin-right:20px;
+	}
+</style>
+<body>
+<div class="container">
+	<h1 class="text-center">el-checkbox</h1>
+	<p class="text-center text-muted">Beautify Radio and Checkbox with pure CSS</p>
+	<div class="text-center">
+		<a class="btn btn-primary" href="./dist/checkbox.min.css">下载压缩css</a>
+		<a class="btn btn-primary" href="./dist/checkbox.css">下载非压缩css</a>
+		<a class="btn btn-primary" href="https://github.com/EvanLiu2968/el-checkbox">项目仓库</a>
+	</div>
+	<h3 class="text-center">Default theme</h3>
+	<div class="row">
+		<div class="col-md-4">
+			<h4 >Checkbox</h4>
+			<div class="el-checkbox">
+				<span class="margin-r">Unchecked</span>
+				<input type="checkbox" name="check" id="1_1">
+				<label class="el-checkbox-style" for="1_1"></label>
+			</div>
+			<div class="el-checkbox">
+				<span class="margin-r">Checked</span>
+				<input type="checkbox" name="check" id="1_2" checked>
+				<label class="el-checkbox-style" for="1_2"></label>
+			</div>
+			<div class="el-checkbox">
+				<span class="margin-r">Disabled</span>
+				<input type="checkbox" name="check" id="1_3" value="option" disabled>
+				<label class="el-checkbox-style" for="1_3"></label>
+			</div>
+			<div class="el-checkbox">
+				<span class="margin-r">Checked && Disabled</span>
+				<input type="checkbox" name="check" id="1_4" checked disabled>
+				<label class="el-checkbox-style" for="1_4"></label>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h4>Radio</h4>
+			<div class="el-radio">
+				<span class="margin-r">Unchecked</span>
+				<input type="radio" name="radio1" id="1_5" value="option" checked>
+				<label class="el-radio-style" for="1_5"></label>
+			</div>
+			<div class="el-radio">
+				<span class="margin-r">Checked</span>
+				<input type="radio" name="radio1" id="1_6" value="option" checked>
+				<label class="el-radio-style" for="1_6"></label>
+			</div>
+			<div class="el-radio">
+				<span class="margin-r">Disabled</span>
+				<input type="radio" id="1_7" value="option" disabled>
+				<label class="el-radio-style" for="1_7"></label>
+			</div>
+			<div class="el-radio">
+				<span class="margin-r">Checked && Disabled</span>
+				<input type="radio" id="1_8" value="option" checked disabled>
+				<label class="el-radio-style" for="1_8"></label>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h4 >Switch</h4>
+			<div>
+				<span class="margin-r">switch</span>
+				<label class="el-switch">
+					<input type="checkbox" name="switch">
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">switch</span>
+				<label class="el-switch">
+					<input type="checkbox" name="switch" checked>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">Disabled</span>
+				<label class="el-switch">
+					<input type="checkbox" name="switch" disabled>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">Checked && Disabled</span>
+				<label class="el-switch">
+					<input type="checkbox" name="switch" checked disabled>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<h3 class="text-center">Size</h3>
+	<div class="row">
+		<div class="col-md-4">
+			<h4 >Checkbox(外部label包裹)</h4>
+			<label class="el-checkbox el-checkbox-sm">
+				<span class="margin-r">small checkbox</span>
+				<input type="checkbox" name="check" checked>
+				<span class="el-checkbox-style  pull-right"></span>
+			</label>
+			<label class="el-checkbox">
+				<span class="margin-r">default checkbox</span>
+				<input type="checkbox" name="check" checked>
+				<span class="el-checkbox-style  pull-right"></span>
+			</label>
+			<label class="el-checkbox el-checkbox-lg">
+				<span class="margin-r">large checkbox</span>
+				<input type="checkbox" name="check" checked>
+				<span class="el-checkbox-style  pull-right"></span>
+			</label>
+			<label class="el-checkbox" style="font-size:150%">
+				<span class="margin-r">custom size</span>
+				<input type="checkbox" name="check" checked>
+				<span class="el-checkbox-style  pull-right"></span>
+			</label>
+		</div>
+		<div class="col-md-4">
+			<h4 >Radio(外部label包裹)</h4>
+			<label class="el-radio el-radio-sm">
+				<span class="margin-r">small radio</span>
+				<input type="radio" name="radio_size">
+				<span class="el-radio-style  pull-right"></span>
+			</label>
+			<label class="el-radio">
+				<span class="margin-r">default radio</span>
+				<input type="radio" name="radio_size" checked>
+				<span class="el-radio-style  pull-right"></span>
+			</label>
+			<label class="el-radio el-radio-lg">
+				<span class="margin-r">large radio</span>
+				<input type="radio" name="radio_size">
+				<span class="el-radio-style  pull-right"></span>
+			</label>
+			<label class="el-radio" style="font-size:150%">
+				<span class="margin-r">custom size</span>
+				<input type="radio" name="radio_size">
+				<span class="el-radio-style  pull-right"></span>
+			</label>
+		</div>
+		<div class="col-md-4">
+			<h4 >Switch</h4>
+			<div>
+				<span class="margin-r">small switch</span>
+				<label class="el-switch el-switch-sm">
+					<input type="checkbox" name="switch" checked>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">default switch</span>
+				<label class="el-switch">
+					<input type="checkbox" name="switch" checked>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">large switch</span>
+				<label class="el-switch el-switch-lg">
+					<input type="checkbox" name="switch" checked>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">custom size</span>
+				<label class="el-switch" style="font-size:150%">
+					<input type="checkbox" name="switch" checked>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<h3 class="text-center">Green theme</h3>
+	<div class="row">
+		<div class="col-md-4">
+			<h4 >Checkbox</h4>
+			<div class="el-checkbox el-checkbox-green">
+				<span class="margin-r">Unchecked</span>
+				<input type="checkbox" name="check" id="2_1">
+				<label class="el-checkbox-style" for="2_1"></label>
+			</div>
+			<div class="el-checkbox el-checkbox-green">
+				<span class="margin-r">Checked</span>
+				<input type="checkbox" name="check" id="2_2" checked>
+				<label class="el-checkbox-style" for="2_2"></label>
+			</div>
+			<div class="el-checkbox el-checkbox-green">
+				<span class="margin-r">Disabled</span>
+				<input type="checkbox" name="check" id="2_3" value="option" disabled>
+				<label class="el-checkbox-style" for="2_3"></label>
+			</div>
+			<div class="el-checkbox el-checkbox-green">
+				<span class="margin-r">Checked && Disabled</span>
+				<input type="checkbox" name="check" id="2_4" checked disabled>
+				<label class="el-checkbox-style" for="2_4"></label>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h4>Radio</h4>
+			<div class="el-radio el-radio-green">
+				<span class="margin-r">Unchecked</span>
+				<input type="radio" name="radio1" id="2_5" value="option" checked>
+				<label class="el-radio-style" for="2_5"></label>
+			</div>
+			<div class="el-radio el-radio-green">
+				<span class="margin-r">Checked</span>
+				<input type="radio" name="radio1" id="2_6" value="option" checked>
+				<label class="el-radio-style" for="2_6"></label>
+			</div>
+			<div class="el-radio el-radio-green">
+				<span class="margin-r">Disabled</span>
+				<input type="radio" id="2_7" value="option" disabled>
+				<label class="el-radio-style" for="2_7"></label>
+			</div>
+			<div class="el-radio el-radio-green">
+				<span class="margin-r">Checked && Disabled</span>
+				<input type="radio" id="2_8" value="option" checked disabled>
+				<label class="el-radio-style" for="2_8"></label>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h4 >Switch</h4>
+			<div>
+				<span class="margin-r">switch</span>
+				<label class="el-switch el-switch-green">
+					<input type="checkbox" name="switch">
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">switch</span>
+				<label class="el-switch el-switch-green">
+					<input type="checkbox" name="switch" checked>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">Disabled</span>
+				<label class="el-switch el-switch-green">
+					<input type="checkbox" name="switch" disabled>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">Checked && Disabled</span>
+				<label class="el-switch el-switch-green">
+					<input type="checkbox" name="switch" checked disabled>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<h3 class="text-center">Red theme</h3>
+	<div class="row">
+		<div class="col-md-4">
+			<h4 >Checkbox</h4>
+			<div class="el-checkbox el-checkbox-red">
+				<span class="margin-r">Unchecked</span>
+				<input type="checkbox" name="check" id="3_1">
+				<label class="el-checkbox-style" for="3_1"></label>
+			</div>
+			<div class="el-checkbox el-checkbox-red">
+				<span class="margin-r">Checked</span>
+				<input type="checkbox" name="check" id="3_2" checked>
+				<label class="el-checkbox-style" for="3_2"></label>
+			</div>
+			<div class="el-checkbox el-checkbox-red">
+				<span class="margin-r">Disabled</span>
+				<input type="checkbox" name="check" id="3_3" value="option" disabled>
+				<label class="el-checkbox-style" for="3_3"></label>
+			</div>
+			<div class="el-checkbox el-checkbox-red">
+				<span class="margin-r">Checked && Disabled</span>
+				<input type="checkbox" name="check" id="3_4" checked disabled>
+				<label class="el-checkbox-style" for="3_4"></label>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h4>Radio</h4>
+			<div class="el-radio el-radio-red">
+				<span class="margin-r">Unchecked</span>
+				<input type="radio" name="radio1" id="3_5" value="option" checked>
+				<label class="el-radio-style" for="3_5"></label>
+			</div>
+			<div class="el-radio el-radio-red">
+				<span class="margin-r">Checked</span>
+				<input type="radio" name="radio1" id="3_6" value="option" checked>
+				<label class="el-radio-style" for="3_6"></label>
+			</div>
+			<div class="el-radio el-radio-red">
+				<span class="margin-r">Disabled</span>
+				<input type="radio" id="3_7" value="option" disabled>
+				<label class="el-radio-style" for="3_7"></label>
+			</div>
+			<div class="el-radio el-radio-red">
+				<span class="margin-r">Checked && Disabled</span>
+				<input type="radio" id="3_8" value="option" checked disabled>
+				<label class="el-radio-style" for="3_8"></label>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h4 >Switch</h4>
+			<div>
+				<span class="margin-r">switch</span>
+				<label class="el-switch el-switch-red">
+					<input type="checkbox" name="switch">
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">switch</span>
+				<label class="el-switch el-switch-red">
+					<input type="checkbox" name="switch" checked>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">Disabled</span>
+				<label class="el-switch el-switch-red">
+					<input type="checkbox" name="switch" disabled>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">Checked && Disabled</span>
+				<label class="el-switch el-switch-red">
+					<input type="checkbox" name="switch" checked disabled>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<h3 class="text-center">Yellow theme</h3>
+	<div class="row">
+		<div class="col-md-4">
+			<h4 >Checkbox</h4>
+			<div class="el-checkbox el-checkbox-yellow">
+				<span class="margin-r">Unchecked</span>
+				<input type="checkbox" name="check" id="4_1">
+				<label class="el-checkbox-style" for="4_1"></label>
+			</div>
+			<div class="el-checkbox el-checkbox-yellow">
+				<span class="margin-r">Checked</span>
+				<input type="checkbox" name="check" id="4_2" checked>
+				<label class="el-checkbox-style" for="4_2"></label>
+			</div>
+			<div class="el-checkbox el-checkbox-yellow">
+				<span class="margin-r">Disabled</span>
+				<input type="checkbox" name="check" id="4_3" value="option" disabled>
+				<label class="el-checkbox-style" for="4_3"></label>
+			</div>
+			<div class="el-checkbox el-checkbox-yellow">
+				<span class="margin-r">Checked && Disabled</span>
+				<input type="checkbox" name="check" id="4_4" checked disabled>
+				<label class="el-checkbox-style" for="4_4"></label>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h4>Radio</h4>
+			<div class="el-radio el-radio-yellow">
+				<span class="margin-r">Unchecked</span>
+				<input type="radio" name="radio1" id="4_5" value="option" checked>
+				<label class="el-radio-style" for="4_5"></label>
+			</div>
+			<div class="el-radio el-radio-yellow">
+				<span class="margin-r">Checked</span>
+				<input type="radio" name="radio1" id="4_6" value="option" checked>
+				<label class="el-radio-style" for="4_6"></label>
+			</div>
+			<div class="el-radio el-radio-yellow">
+				<span class="margin-r">Disabled</span>
+				<input type="radio" id="4_7" value="option" disabled>
+				<label class="el-radio-style" for="4_7"></label>
+			</div>
+			<div class="el-radio el-radio-yellow">
+				<span class="margin-r">Checked && Disabled</span>
+				<input type="radio" id="4_8" value="option" checked disabled>
+				<label class="el-radio-style" for="4_8"></label>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h4 >Switch</h4>
+			<div>
+				<span class="margin-r">switch</span>
+				<label class="el-switch el-switch-yellow">
+					<input type="checkbox" name="switch">
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">switch</span>
+				<label class="el-switch el-switch-yellow">
+					<input type="checkbox" name="switch" checked>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">Disabled</span>
+				<label class="el-switch el-switch-yellow">
+					<input type="checkbox" name="switch" disabled>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+			<div>
+				<span class="margin-r">Checked && Disabled</span>
+				<label class="el-switch el-switch-yellow">
+					<input type="checkbox" name="switch" checked disabled>
+					<span class="el-switch-style"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "el-checkbox",
+  "version": "1.0.0",
+  "description": "A UI library with pure CSS3 radio, check, switch",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp default",
+    "build": "gulp less"
+  },
+  "keywords": [
+    "el-checkbox gulp"
+  ],
+  "repository": {},
+  "author": "evanliu2968",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-webserver": "^0.9.1",
+    "path": "^0.12.7"
+  }
+}
