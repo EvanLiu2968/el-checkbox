@@ -1,17 +1,17 @@
-#el-checkbox#
+# el-checkbox #
 一套纯css3的单选、复选、开关UI库。
 A UI library with pure CSS3 radio, check, switch.
 
-##Description##
+## Description ##
 
 组件引入blue、red、green、yellow四种主题色(参考了element UI的颜色)
 命名空间也为el-，均以em为单位，方便对组件大小定制，定义了small(85%)、default(100%)、large(125%)三种大小，可针对不同设计自由扩展。
 
-##Example##
+## Example ##
 online example:[https://evanliu2968.github.io/el-checkbox](https://evanliu2968.github.io/el-checkbox "https://evanliu2968.github.io/el-checkbox")
 
-##Usage##
-- 方法一：将src里的less文件引入至项目less文件
+## Usage ##
+- 方法一：将src里的less文件引入至项目less文件，可修改组件颜色、大小变量
 - 方法二：引入dist里的checkbox.css或checkbox.min.css
 
 ```
@@ -53,7 +53,7 @@ online example:[https://evanliu2968.github.io/el-checkbox](https://evanliu2968.g
 </label>
 ```
 
-##Directory##
+## Directory ##
 ```
 ├── dist                  编译后的css(build file)              
 │   ├── checkbox.css     未压缩css(unminify css)          
@@ -66,5 +66,5 @@ online example:[https://evanliu2968.github.io/el-checkbox](https://evanliu2968.g
 └── index.html            demo
 ```
 
-##License##
+## License ##
 el-checkbox is released under the MIT license.
