@@ -14,31 +14,32 @@ online example:[https://evanliu2968.github.io/el-checkbox](https://evanliu2968.g
 - 方法一：将src里的less文件引入至项目less文件，可修改组件颜色、大小变量
 - 方法二：引入dist里的checkbox.css或checkbox.min.css
 
-```
-//block，移动端适用
+```html
+<!-- block，移动端适用 -->
 <label class="el-checkbox">
-    <span>custom text</span> //此行无样式定义
+    <!-- 此行无样式定义 -->
+    <span>custom text</span>
     <input type="checkbox" name="check" value="option">
     <span class="el-checkbox-style"></label>
 </label>
 <label class="el-radio">
-    <span>custom text</span> //此行无样式定义
+    <span>custom text</span>
     <input type="radio" name="radio" value="option">
     <span class="el-radio-style"></label>
 </label>
-//inline，PC端适用
+<!-- inline，PC端适用 -->
 <div class="el-checkbox">
-    <span>custom text</span> //此行无样式定义
+    <span>custom text</span>
     <input type="checkbox" id="checkbox" name="check" value="option">
     <label for="checkbox" class="el-checkbox-style"></label>
 </div>
-//开关
+<!-- 开关 -->
 <label class="el-switch">
     <input type="checkbox" name="switch" checked hidden>
     <span class="el-switch-style"></span>
 </label>
 
-//不同尺寸(radio,checkbox同下)
+<!-- 不同尺寸(radio,checkbox同下) -->
 <label class="el-switch el-switch-sm">
     <input type="checkbox" name="switch" checked hidden>
     <span class="el-switch-style"></span>
